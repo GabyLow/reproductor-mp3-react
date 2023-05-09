@@ -1,1 +1,125 @@
+:root{
+    --mainColor: #fff;
+    --mainLightColor: rgba(235,235,235,0.5);
+    --mainDimColor: rgb(228,228,228);
+    background-color: dimgray;
+}
 
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    color: var(--mainColor);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+.music-Container{
+    width: 230px;
+    margin: 3% 10% 0 10%;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(116, 163, 147);
+    font-weight: 600;
+}
+
+.musicPlayer{
+    margin: 0;
+    margin-bottom: 10px;
+    color: var(--mainLightColor);
+}
+
+.music-Head-Name{
+    margin: 0 auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.music-Artist-Name{
+    color: var(--mainDimColor);
+    margin: 4px 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+#songAvatar{
+    width: 125px;
+    height: 125px;
+    margin: 18px 0;
+    position: relative;
+    cursor: pointer;
+    animation: animateAvatar 10s linear infinite;
+}
+
+.musicTimerDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 600;
+}
+
+.musicProgressBar{
+    width: 100%;
+    margin-bottom: 16px;
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+    filter: hue-rotate(20deg);
+}
+
+/* Volume */
+.volumeSlider{
+    width: 30%;
+    height: 5px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.volumeToggler{
+    width: 10px;
+    margin-right: 100px;
+}
+
+
+.playBtn{
+    font-size: 32px;
+    margin: 8px 10px;
+    color: var(--mainColor);
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.musicControler{
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--mainColor);
+}
+
+
+#songLyrics{
+    width: 230px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(88, 126, 113);
+    
+} 
